@@ -60,10 +60,10 @@ The key is entered in the app settings on your Tronbyt server, where the field i
 
 ## Running locally
 
-Install [Pixlet](https://tronbyt.com/pixlet/installing/), then from this folder:
+Install [Pixlet](https://tronbyt.com/pixlet/installing/), then from the repository root:
 
 ```sh
-pixlet serve intervals_stats.star
+pixlet serve apps/intervalsstats/intervals_stats.star
 ```
 
 Open <http://localhost:8080> and enter your API key in the settings form.
@@ -72,7 +72,7 @@ To render to a file instead:
 
 ```sh
 export INTERVALS_API_KEY=your-key-here
-pixlet render intervals_stats.star api_key=$INTERVALS_API_KEY period=total group=cycling units=km --format gif --magnify 8 -o preview.gif
+pixlet render apps/intervalsstats/intervals_stats.star api_key=$INTERVALS_API_KEY period=total group=cycling units=km --format gif --magnify 8 -o preview.gif
 ```
 
 If your network blocks access to intervals.icu, set a proxy before running Pixlet or the Tronbyt server, for example `export HTTPS_PROXY=http://proxy.example:3128`. Pixlet's HTTP timeout defaults to 5 seconds, so `export PIXLET_HTTP_TIMEOUT=30s` helps on slow connections.
@@ -80,13 +80,13 @@ If your network blocks access to intervals.icu, set a proxy before running Pixle
 To validate the app:
 
 ```sh
-pixlet lint intervals_stats.star
-pixlet check intervals_stats.star
+pixlet lint apps/intervalsstats/intervals_stats.star
+pixlet check apps/intervalsstats/intervals_stats.star
 ```
 
 ## Installing on a Tronbyt server
 
-Either upload `intervals_stats.star` as a custom app in the Tronbyt server web UI, or add this repository as a custom apps repository if your server allows it. Then add **Intervals Stats** to your device and fill in the settings.
+Either upload `apps/intervalsstats/intervals_stats.star` as a custom app in the Tronbyt server web UI, or add this repository under **Settings → Content and Firmware → Custom Apps Repository** if your server allows it. Then add **Intervals Stats** to your device and fill in the settings.
 
 ## How it works
 
@@ -107,12 +107,14 @@ Either upload `intervals_stats.star` as a custom app in the Tronbyt server web U
 
 ## Files
 
-| File | Purpose |
+| Path | Purpose |
 |---|---|
-| `intervals_stats.star` | The app |
-| `manifest.yaml` | App metadata for the Tronbyt community apps repository |
-| `intervalsstats.webp`, `intervalsstats@2x.webp` | Preview images for the community apps repository |
+| `apps/intervalsstats/intervals_stats.star` | The app |
+| `apps/intervalsstats/manifest.yaml` | App metadata for the Tronbyt community apps repository |
+| `apps/intervalsstats/intervalsstats.webp`, `intervalsstats@2x.webp` | Preview images for the community apps repository |
 | `images/` | Screenshots used in this README |
+
+The `apps/<app name>/` layout is the one Tronbyt servers expect in a custom apps repository.
 
 ## Author
 
