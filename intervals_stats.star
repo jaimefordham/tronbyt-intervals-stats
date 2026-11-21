@@ -2,7 +2,7 @@
 Applet: Intervals Stats
 Summary: Intervals.icu activity totals
 Description: Shows year-to-date or all-time distance, moving time and activity count from Intervals.icu.
-Author: jfh06
+Author: Jaime Fordham (github.com/jaimefordham)
 """
 
 load("encoding/base64.star", "base64")

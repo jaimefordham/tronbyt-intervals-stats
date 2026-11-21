@@ -3,7 +3,7 @@ id: intervals-stats
 name: Intervals Stats
 summary: Intervals.icu activity totals
 desc: Shows year-to-date or all-time distance, moving time and activity count from Intervals.icu for cycling, running, walking or swimming.
-author: jfh06
+author: Jaime Fordham (github.com/jaimefordham)
 fileName: intervals_stats.star
 packageName: intervalsstats
 category: sports
