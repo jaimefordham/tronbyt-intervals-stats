@@ -16,7 +16,7 @@ API_URL = "https://intervals.icu/api/v1/athlete/%s/activities"
 CACHE_TTL_SECONDS = 3600
 METRES_PER_MILE = 1609.344
 
-APP_TITLE = "INTERVALS"
+APP_TITLE = "intervals.icu"
 FRAME_COUNT = 16  # first half shows the app title, second half the activity and period
 FRAME_DELAY_MS = 250
 

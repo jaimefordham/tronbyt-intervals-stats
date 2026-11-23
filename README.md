@@ -10,10 +10,13 @@ A [Tronbyt](https://tronbyt.com) / [Pixlet](https://tronbyt.com/pixlet/getting-s
 - Distance in kilometres or miles
 - Moving time and activity count
 - Animated icons for each stat, with a bicycle, runner, walker or swimmer depending on the activity
-- Title that alternates between **INTERVALS** and the activity and period, e.g. `CYCLING YTD`
+- Title that alternates between **intervals.icu** and the activity and period, e.g. `CYCLING YTD`
 - Colours taken from the Intervals.icu dark theme
 
 ## Screenshots
+
+These animations are recordings of Pixlet's browser simulator, including its
+LED-dot effect. They show live data and the current `intervals.icu` heading.
 
 | Cycling (total) | Running (total) |
 |---|---|
